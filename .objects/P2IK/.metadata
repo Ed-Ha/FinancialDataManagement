@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome כרטיסייה חדשה",
+  "Type": "App",
+  "Id": "P2IKJZbcYE2wqQy8U16WWw",
+  "Reference": "NLGvdvr9NkWEYZR_JrbZ1g/P2IKJZbcYE2wqQy8U16WWw",
+  "Created": "2025-11-29T11:44:42.7021047Z",
+  "Updated": "2025-11-29T11:44:42.7021047Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

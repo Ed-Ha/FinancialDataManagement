@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome הסבר על מטלה ב-UiPath",
+  "Type": "App",
+  "Id": "TwZ0m0WLYkyhbM1wcnmy_w",
+  "Reference": "NLGvdvr9NkWEYZR_JrbZ1g/TwZ0m0WLYkyhbM1wcnmy_w",
+  "Created": "2025-11-29T11:33:38.4323067Z",
+  "Updated": "2025-11-29T11:33:38.4323067Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

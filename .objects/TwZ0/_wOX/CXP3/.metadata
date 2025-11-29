@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome הסבר על מטלה ב-UiPath",
+  "Type": "Screen",
+  "Id": "CXP36Z9_zkS9EYpCmEyvNQ",
+  "Reference": "NLGvdvr9NkWEYZR_JrbZ1g/CXP36Z9_zkS9EYpCmEyvNQ",
+  "ParentRef": "NLGvdvr9NkWEYZR_JrbZ1g/_wOXRqI1IUexd-wfxxpSxg",
+  "Created": "2025-11-29T11:33:38.6727942Z",
+  "Updated": "2025-11-29T11:33:38.6727942Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

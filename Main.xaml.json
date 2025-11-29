@@ -1,0 +1,33 @@
+{
+  "DisplayName": "Main",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_strSaveExcelPath",
+      "DisplayName": "in_strSaveExcelPath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "C:\\Users\\edenh\\Desktop\\test",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strEmailReceivers",
+      "DisplayName": "in_strEmailReceivers",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "edenhasson@gmail.com",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Symbol Name   Price Cha…",
+  "Type": "Element",
+  "Id": "H_ahM_5DmUi8GSZ-FnDBdw",
+  "Reference": "NLGvdvr9NkWEYZR_JrbZ1g/H_ahM_5DmUi8GSZ-FnDBdw",
+  "ParentRef": "NLGvdvr9NkWEYZR_JrbZ1g/zpsj62XD_k-KJjiJn52lQg",
+  "Created": "2025-11-29T11:39:15.574408Z",
+  "Updated": "2025-11-29T11:39:15.574408Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Most Active Stocks US stocks with the ",
+  "Type": "Screen",
+  "Id": "zpsj62XD_k-KJjiJn52lQg",
+  "Reference": "NLGvdvr9NkWEYZR_JrbZ1g/zpsj62XD_k-KJjiJn52lQg",
+  "ParentRef": "NLGvdvr9NkWEYZR_JrbZ1g/5Niekqr3eEKCTF3d0mQp4w",
+  "Created": "2025-11-29T11:35:17.9412395Z",
+  "Updated": "2025-11-29T11:35:17.9412395Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

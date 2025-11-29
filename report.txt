@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Market Summary</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #e9edf3; margin: 0; padding: 20px 0;">
+
+    <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center">
+                <table width="800" cellpadding="0" cellspacing="0"
+                       style="background-color: #ffffff; border-radius: 8px; border: 1px solid #d0d7e2; box-shadow: 0 2px 6px rgba(0,0,0,0.06); padding: 20px;">
+
+                    <!-- Header -->
+                    <tr>
+                        <td style="text-align: center; padding: 10px 10px 16px 10px; border-bottom: 1px solid #eef1f6;">
+                            <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #7a8aa6; margin-bottom: 4px;">
+                                Automated Report
+                            </div>
+                            <h1 style="margin: 0; font-size: 24px; color: #233554;">
+                                Daily Market Summary
+                            </h1>
+                            <p style="margin: 6px 0 0 0; color: #7a8aa6; font-size: 13px;">
+                                Date: <strong>{{REPORT_DATE}}</strong>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Summary -->
+                    <tr>
+                        <td style="padding: 16px 10px 8px 10px;">
+                            <h2 style="margin: 0 0 8px 0; font-size: 18px; color: #233554;">Summary</h2>
+                            <p style="margin: 4px 0; font-size: 13px; color: #4a5568;">
+                                Total tickers processed:
+                                <span style="font-weight: bold; color: #1a73e8;">{{TOTAL_TICKERS}}</span>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Top Movers -->
+                    <tr>
+                        <td style="padding: 8px 10px 16px 10px;">
+                            <h2 style="margin: 0 0 6px 0; font-size: 18px; color: #233554;">3 Top Movers (&gt;2% change)</h2>
+                            <p style="margin: 4px 0 8px 0; font-size: 13px; color: #4a5568;">
+                                Total movers over 2%:
+                                <span style="font-weight: bold; color: #1a73e8;">{{TOP_MOVERS_COUNT}}</span>
+                            </p>
+
+                            <table width="100%" cellpadding="6" cellspacing="0"
+                                   style="border-collapse: collapse; font-size: 12px; border: 1px solid #dde3ee;">
+                                <thead>
+                                    <tr style="background-color: #1a73e8; color: #ffffff;">
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Symbol</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Stock Link</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Name</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Price</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Changed</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Currency</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Market Cap</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Earnings Date</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Change</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">MarketCapValue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{TOP_MOVERS_ROWS}}
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Currency Breakdown -->
+                    <tr>
+                        <td style="padding: 8px 10px 16px 10px;">
+                            <h2 style="margin: 0 0 6px 0; font-size: 18px; color: #233554;">Currency Breakdown</h2>
+                            <table cellpadding="4" cellspacing="0" style="font-size: 13px; color: #4a5568;">
+                                <tr>
+                                    <td style="padding-right: 20px;">
+                                        <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #1a73e8; margin-right: 6px;"></span>
+                                        USD stocks:
+                                    </td>
+                                    <td>
+                                        <strong>{{USD_COUNT}}</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 20px;">
+                                        <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #fbbc04; margin-right: 6px;"></span>
+                                        Non-USD stocks:
+                                    </td>
+                                    <td>
+                                        <strong>{{NON_USD_COUNT}}</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Highest Market Cap -->
+                    <tr>
+                        <td style="padding: 8px 10px 16px 10px;">
+                            <h2 style="margin: 0 0 6px 0; font-size: 18px; color: #233554;">Top 5 by Market Cap</h2>
+
+                            <table width="100%" cellpadding="6" cellspacing="0"
+                                   style="border-collapse: collapse; font-size: 12px; border: 1px solid #dde3ee;">
+                                <thead>
+                                    <tr style="background-color: #1a73e8; color: #ffffff;">
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Symbol</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Stock Link</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Name</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Price</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Changed</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Currency</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Market Cap</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Earnings Date</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Change</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">MarketCapValue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{TOP_MARKET_CAP_ROWS}}
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Earnings Today -->
+                    <tr>
+                        <td style="padding: 8px 10px 16px 10px;">
+                            <h2 style="margin: 0 0 6px 0; font-size: 18px; color: #233554;">Earnings Today - Top 3</h2>
+
+                            <table width="100%" cellpadding="6" cellspacing="0"
+                                   style="border-collapse: collapse; font-size: 12px; border: 1px solid #dde3ee;">
+                                <thead>
+                                    <tr style="background-color: #1a73e8; color: #ffffff;">
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Symbol</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Stock Link</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Name</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Price</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Changed</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Currency</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Market Cap</th>
+                                        <th align="left"  style="border: 1px solid #dde3ee; padding: 6px;">Earnings Date</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">Change</th>
+                                        <th align="right" style="border: 1px solid #dde3ee; padding: 6px;">MarketCapValue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{EARNINGS_ROWS}}
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 14px 10px 4px 10px; border-top: 1px solid #eef1f6; font-size: 11px; color: #7a8aa6;">
+                            Full details are available in the attached Excel report.
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

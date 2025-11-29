@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Most Active Stocks US stocks with the highest trading volume today - Yahoo Fina",
+  "Type": "App",
+  "Id": "9bm3JQpA9U-uFvhNDixe_g",
+  "Reference": "NLGvdvr9NkWEYZR_JrbZ1g/9bm3JQpA9U-uFvhNDixe_g",
+  "Created": "2025-11-29T11:35:17.7907211Z",
+  "Updated": "2025-11-29T11:35:17.7907211Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
