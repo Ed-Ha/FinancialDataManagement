@@ -297,7 +297,7 @@
             <av:PointCollection x:Key="ConnectorLocation">320,335 320,395</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Sequence - get stocks initial data from Yahoo" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Sequence - get stocks initial data from Yahoo" sap:VirtualizedContainerService.HintSize="554,1394.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -308,7 +308,7 @@
               <OutArgument x:TypeArguments="scg:List(x:String)">[lstExtractionLinks]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="scg:List(x:String)">[new list (of string) from {"https://finance.yahoo.com/markets/stocks/trending"}]</InArgument>
+              <InArgument x:TypeArguments="scg:List(x:String)">[New list (Of String) From {"https://finance.yahoo.com/markets/stocks/trending", "https://finance.yahoo.com/markets/stocks/most-active/?start=0&amp;count=200", "https://finance.yahoo.com/markets/stocks/gainers/?start=0&amp;count=200", "https://finance.yahoo.com/markets/stocks/losers/"}]</InArgument>
             </Assign.Value>
           </Assign>
           <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each Link" sap:VirtualizedContainerService.HintSize="520,1217.3333333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[lstExtractionLinks]">
@@ -898,7 +898,7 @@
                             <av:PointCollection x:Key="ConnectorLocation">320,855 320,905</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ueab:SequenceX DisplayName="Single Excel Process Scope - Write To Excel File" sap:VirtualizedContainerService.HintSize="536,1790.6666666666667" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+                        <ueab:SequenceX DisplayName="Single Excel Process Scope - Write To Excel File" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="SequenceX_1">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
